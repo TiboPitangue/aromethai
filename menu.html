@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===================== SEO ===================== -->
+<title>La carte — Arôme Thaï | Restaurant thaïlandais & sushi à Muret</title>
+<meta name="description" content="Découvrez la carte complète d'Arôme Thaï à Muret : entrées vapeur, soupes, spécialités du chef, volailles, fruits de mer, pad thaï, sushis, sashimis et desserts thaïlandais." />
+<meta name="keywords" content="carte restaurant thaïlandais Muret, menu thaï Muret, pad thaï, curry thaï, sushi Muret, sashimi, som tam, prix restaurant thaï Muret, Arôme Thaï carte" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Arôme Thaï" />
+<link rel="canonical" href="https://aromethai.fr/menu.html" />
+
+<!-- Géolocalisation -->
+<meta name="geo.region" content="FR-31" />
+<meta name="geo.placename" content="Muret" />
+<meta name="geo.position" content="43.4614;1.3264" />
+<meta name="ICBM" content="43.4614, 1.3264" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant.menu" />
+<meta property="og:title" content="La carte — Arôme Thaï | Restaurant thaïlandais & sushi à Muret" />
+<meta property="og:description" content="Entrées, soupes, spécialités du chef, pad thaï, sushis et desserts : la carte complète du restaurant Arôme Thaï à Muret." />
+<meta property="og:image" content="https://aromethai.fr/img/hero.jpg" />
+<meta property="og:url" content="https://aromethai.fr/menu.html" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:site_name" content="Arôme Thaï" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="La carte — Arôme Thaï | Restaurant thaïlandais & sushi à Muret" />
+<meta name="twitter:description" content="La carte complète du restaurant Arôme Thaï à Muret : thaï, sushis et desserts." />
+<meta name="twitter:image" content="https://aromethai.fr/img/hero.jpg" />
+
+<!-- Favicon (monogramme doré) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0d'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23c9a24b' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Trirong:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0c0c0d',
+          charcoal: '#161617',
+          panel: '#1d1d1f',
+          gold: '#c9a24b',
+          goldsoft: '#e3c780',
+          cream: '#f4efe4',
+          chili: '#cf4b3a',
+          muted: '#b3ac9e',
+        },
+        fontFamily: {
+          serif: ['Trirong', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+          display: ['Trirong', 'serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Arôme Thaï",
+  "image": "https://aromethai.fr/img/hero.jpg",
+  "url": "https://aromethai.fr/",
+  "servesCuisine": ["Thaïlandaise", "Japonaise", "Asiatique"],
+  "priceRange": "€€",
+  "telephone": "+33561510896",
+  "hasMenu": "https://aromethai.fr/menu.html",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2 Rue de Vasconia",
+    "addressLocality": "Muret",
+    "postalCode": "31600",
+    "addressRegion": "Occitanie",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.4614,
+    "longitude": 1.3264
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "452",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body { background: #0c0c0d; }
+
+  /* Reveal au scroll */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s cubic-bezier(.22,.61,.36,1), transform .9s cubic-bezier(.22,.61,.36,1); }
+  .reveal.is-visible { opacity: 1; transform: none; }
+  .reveal[data-delay="1"] { transition-delay: .08s; }
+  .reveal[data-delay="2"] { transition-delay: .16s; }
+  .reveal[data-delay="3"] { transition-delay: .24s; }
+
+  /* Hover lift cartes */
+  .lift { transition: transform .45s cubic-bezier(.22,.61,.36,1), box-shadow .45s; will-change: transform; }
+  .lift:hover { transform: translateY(-5px); box-shadow: 0 24px 48px -26px rgba(0,0,0,.7); }
+
+  /* Nav underline */
+  .nav-link { position: relative; }
+  .nav-link::after { content:''; position:absolute; left:0; right:0; bottom:-6px; height:1px; background: #c9a24b; transform: scaleX(0); transform-origin: right; transition: transform .4s cubic-bezier(.22,.61,.36,1); }
+  .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); transform-origin: left; }
+
+  /* Photo zoom */
+  .zoomer img { transition: transform 1.1s cubic-bezier(.22,.61,.36,1); }
+  .zoomer:hover img { transform: scale(1.06); }
+
+  /* Onglets carte */
+  .tab-btn { transition: all .3s; }
+  .tab-btn.active { background:#c9a24b; color:#0c0c0d; border-color:#c9a24b; }
+
+  /* Lightbox */
+  #lightbox { transition: opacity .3s; }
+  #lightbox.hidden-lb { opacity:0; pointer-events:none; }
+
+  ::selection { background:#c9a24b; color:#0c0c0d; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration:.001ms !important; transition-duration:.001ms !important; }
+    .reveal { opacity:1 !important; transform:none !important; }
+  }
+</style>
+</head>
+
+<body class="bg-ink text-cream font-sans antialiased selection:bg-gold">
+
+<!-- ============ NAV ============ -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 border-b border-transparent">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group" aria-label="Arôme Thaï — accueil">
+      <span class="leading-tight">
+        <span class="block font-serif text-xl tracking-wide text-cream">Arôme Thaï</span>
+        <span class="block text-[10px] uppercase tracking-[0.25em] text-gold/80">Muret · Cuisine thaï</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 text-sm text-cream/85" aria-label="Navigation principale">
+      <a href="index.html" class="nav-link" data-nav>Accueil</a>
+      <a href="menu.html" class="nav-link active" data-nav>La carte</a>
+      <a href="index.html#pratique" class="nav-link" data-nav>Infos & accès</a>
+      <a href="avis.html" class="nav-link" data-nav>Avis</a>
+      <a href="index.html#photos" class="nav-link" data-nav>Photos</a>
+      <div class="flex items-center gap-3 ml-2">
+        <a href="https://www.ubereats.com/fr/store/arome-thai/hzsM4lY2UNK_YeXNOMLTyA?diningMode=DELIVERY&amp;sc=SEARCH_SUGGESTION" target="_blank" rel="noopener" aria-label="Commander sur Uber Eats" class="inline-flex items-center gap-2 rounded-full bg-[#06C167] text-ink px-5 py-2.5 font-medium hover:bg-[#05a75a] transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Uber Eats
+        </a>
+        <a href="tel:+33561510896" class="inline-flex items-center gap-2 rounded-full bg-gold text-ink px-5 py-2.5 font-medium hover:bg-goldsoft transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          05 61 51 08 96
+        </a>
+      </div>
+    </nav>
+
+    <button id="burger" class="lg:hidden grid place-items-center w-11 h-11 rounded-lg border border-cream/20 text-cream" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg id="burgerIcon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobileMenu" class="lg:hidden hidden bg-charcoal/98 backdrop-blur border-t border-white/5">
+    <nav class="flex flex-col px-6 py-4 text-cream/90" aria-label="Navigation mobile">
+      <a href="index.html" class="py-3 border-b border-white/5" data-moblink>Accueil</a>
+      <a href="menu.html" class="py-3 border-b border-white/5" data-moblink>La carte</a>
+      <a href="index.html#pratique" class="py-3 border-b border-white/5" data-moblink>Infos & accès</a>
+      <a href="avis.html" class="py-3 border-b border-white/5" data-moblink>Avis</a>
+      <a href="index.html#photos" class="py-3 border-b border-white/5" data-moblink>Photos</a>
+      <a href="https://www.ubereats.com/fr/store/arome-thai/hzsM4lY2UNK_YeXNOMLTyA?diningMode=DELIVERY&amp;sc=SEARCH_SUGGESTION" target="_blank" rel="noopener" class="mt-4 inline-flex justify-center items-center gap-2 rounded-full bg-[#06C167] text-ink px-5 py-3 font-medium">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        Commander sur Uber Eats
+      </a>
+      <a href="tel:+33561510896" class="mt-3 mb-2 inline-flex justify-center items-center gap-2 rounded-full bg-gold text-ink px-5 py-3 font-medium">Appeler · 05 61 51 08 96</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ EN-TÊTE DE PAGE ============ -->
+<div class="relative overflow-hidden">
+  <div id="tabBg" class="pointer-events-none absolute inset-0 z-0 bg-cover bg-center opacity-0 transition-opacity duration-700"></div>
+  <div class="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-ink/85 via-ink/30 to-transparent"></div>
+  <div class="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-ink/40 via-transparent to-ink"></div>
+<section class="relative z-10 pt-32 pb-20 sm:pt-36 sm:pb-28 min-h-[460px] flex items-end">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 w-full">
+    <nav class="reveal text-xs text-cream/50 mb-6" aria-label="Fil d'Ariane">
+      <a href="index.html" class="hover:text-gold transition-colors">Accueil</a>
+      <span class="mx-2">/</span>
+      <span class="text-cream/80">La carte</span>
+    </nav>
+    <p class="reveal text-gold text-xs uppercase tracking-[0.3em] mb-4" data-delay="1">La carte</p>
+    <h1 class="reveal font-serif text-4xl sm:text-6xl text-cream mb-5" data-delay="2">Notre carte complète</h1>
+    <p class="reveal text-cream/80 leading-relaxed max-w-2xl" data-delay="3">
+      Des grands classiques thaïlandais aux sushis préparés minute. Naviguez par catégorie ou feuilletez la carte imprimée en photos plus bas.
+    </p>
+  </div>
+</section>
+</div>
+
+<!-- ============ CARTE DÉTAILLÉE ============ -->
+<section id="carte" aria-label="Carte détaillée" class="relative z-10 pt-6 sm:pt-8 pb-16 sm:pb-20">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="reveal rounded-3xl bg-charcoal border border-white/10 p-6 sm:p-10 shadow-2xl shadow-black/40">
+      <div class="flex flex-wrap gap-2 mb-8" role="tablist" aria-label="Catégories de la carte">
+        <button class="tab-btn active text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="entrees" role="tab">Entrées & vapeur</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="soupes" role="tab">Soupes & salades</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="chef" role="tab">Spécialités du chef</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="viandes" role="tab">Volailles & viandes</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="mer" role="tab">Fruits de mer</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="riz" role="tab">Pâtes & riz</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="accompagnements" role="tab">Accompagnements</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="sushi" role="tab">Menus sushi</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="sushicarte" role="tab">Sushi à la carte</button>
+        <button class="tab-btn text-sm rounded-full border border-white/15 px-4 py-2 text-cream/85" data-tab="desserts" role="tab">Desserts</button>
+      </div>
+
+      <!-- Panels -->
+      <div class="tab-panel grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="entrees">
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pho pai <span class="text-cream/40 text-sm">(5 pièces)</span></span><span class="text-gold whitespace-nowrap">7,50 €</span></div><p class="text-sm text-cream/55">Rouleaux croustillants au poulet</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pho pai mau <span class="text-cream/40 text-sm">(5 pièces)</span></span><span class="text-gold whitespace-nowrap">7,50 €</span></div><p class="text-sm text-cream/55">Nems au porc</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kung hom sabai <span class="text-cream/40 text-sm">(5 pièces)</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Rouleaux de crevettes frits à la thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pho pia sod <span class="text-cream/40 text-sm">(3 pièces)</span></span><span class="text-gold whitespace-nowrap">7,50 €</span></div><p class="text-sm text-cream/55">Rouleaux de printemps aux crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kai ping <span class="text-cream/40 text-sm">(5 pièces)</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Brochettes de poulet sauce cacahuète</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kung chup peng <span class="text-cream/40 text-sm">(5 pièces)</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Beignets de crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Gyoza ped <span class="text-cream/40 text-sm">(5 pièces)</span> <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Raviolis frits au poulet et légumes épicés</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Gyoza <span class="text-cream/40 text-sm">(6 pièces)</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Raviolis frits au poulet et légumes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Say oua isan <span class="text-cream/40 text-sm">(6 pièces)</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Saucisses isan aromatisées façon laotienne</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Samauza au bœuf <span class="text-cream/40 text-sm">(5 pièces)</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Samoussas croustillants au bœuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Samauza au poulet <span class="text-cream/40 text-sm">(5 pièces)</span></span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Samoussas croustillants au poulet</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Yam nem</span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Salade de nems</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Yam neau nem</span><span class="text-gold whitespace-nowrap">10,50 €</span></div><p class="text-sm text-cream/55">Salade de bœuf et nems croustillants</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Ailes de poulet frites</span><span class="text-gold whitespace-nowrap">9,50 €</span></div><p class="text-sm text-cream/55">Croustillantes et dorées</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Poulet grillé mariné</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Poulet grillé mariné aux herbes thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tad raum Arôme Thaï <span class="text-cream/40 text-sm">(2 pers.)</span></span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Grand assortiment nems, brochettes, raviolis et beignets — <span class="text-cream/70">1 pers. 8,50 €</span></p></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Vapeur <span class="text-cream/40 normal-case tracking-normal">(6 pièces)</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Assortiment à la vapeur</span><span class="text-gold whitespace-nowrap">8,00 €</span></div><p class="text-sm text-cream/55">Bouchées vapeur variées</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Bouchées aux crevettes</span><span class="text-gold whitespace-nowrap">8,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Bouchées au porc</span><span class="text-gold whitespace-nowrap">8,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Raviolis de crevettes</span><span class="text-gold whitespace-nowrap">8,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Bouchées au poulet</span><span class="text-gold whitespace-nowrap">8,00 €</span></div></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Entrées japonaises</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Soupe miso</span><span class="text-gold whitespace-nowrap">3,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Salade de choux</span><span class="text-gold whitespace-nowrap">3,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Riz nature</span><span class="text-gold whitespace-nowrap">2,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Riz vinaigré</span><span class="text-gold whitespace-nowrap">2,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Salade wagamé</span><span class="text-gold whitespace-nowrap">3,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Salade de saumon</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Salade de thon</span><span class="text-gold whitespace-nowrap">6,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tartare de thon <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">6,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tartare de saumon <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">6,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Salade du chef</span><span class="text-gold whitespace-nowrap">7,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Carpaccio de saumon</span><span class="text-gold whitespace-nowrap">6,00 €</span></div></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="soupes">
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mb-1">Soupes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tom kha kai</span><span class="text-gold whitespace-nowrap">9,50 / 16,50 €</span></div><p class="text-sm text-cream/55">Soupe de poulet au lait de coco</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tom yum kung <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">9,50 €</span></div><p class="text-sm text-cream/55">Soupe de crevettes à la citronnelle</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tom yum goong yai <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">19,50 €</span></div><p class="text-sm text-cream/55">Soupe de gambas, citronnelle et lait de coco</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tom gud vunsen</span><span class="text-gold whitespace-nowrap">9,50 / 16,50 €</span></div><p class="text-sm text-cream/55">Soupe de cheveux d'ange aux boulettes de porc</p></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Salades</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Yam neau <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Salade de bœuf à la citronnelle</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Yam say pa lod</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Salade d'ananas aux herbes thaï, poulet et crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Som tam <span class="text-cream/40 text-sm">(thaï ou lao)</span></span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Salade de papaye verte</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Yam wounsen</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Salade de cheveux d'ange, herbes thaï, porc haché et crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Yam ma maung</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Salade de mangue verte aux crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kung chert nam pla <span class="text-cream/40 text-sm">(cru)</span></span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Marinade de crevettes servie avec sa sauce citron vert</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Lab neau <span class="text-cream/40 text-sm">(cuit ou cru)</span></span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Tartare de bœuf, jus de citron et herbes thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Lab pla <span class="text-cream/40 text-sm">(cru)</span></span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Tartare de saumon, jus de citron aux herbes thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Lab mau</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Salade de porc haché aromatisée laotienne</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Lab ped</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Salade de canard aromatisée laotienne</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="chef">
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Chuu chee saumon</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Pavé de saumon à la crème de curry rouge</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Saumon wan</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Pavé de saumon grillé à la sauce sucrée</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pla neung manao</span><span class="text-gold whitespace-nowrap">21,50 €</span></div><p class="text-sm text-cream/55">Daurade royale au citron vert, cuite à la vapeur</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pla neung kning</span><span class="text-gold whitespace-nowrap">21,50 €</span></div><p class="text-sm text-cream/55">Daurade royale vapeur au gingembre et à la sauce de soja</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pla lad prik <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">21,50 €</span></div><p class="text-sm text-cream/55">Daurade frite à la sauce thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Goong pad pong kaly</span><span class="text-gold whitespace-nowrap">19,50 €</span></div><p class="text-sm text-cream/55">Gambas sautées au curry jaune</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Goong kiewwan <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">19,50 €</span></div><p class="text-sm text-cream/55">Gambas au curry vert</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Chuu chee goong yai <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">19,50 €</span></div><p class="text-sm text-cream/55">Gambas à la crème de curry rouge</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Goong hob wunsent</span><span class="text-gold whitespace-nowrap">19,50 €</span></div><p class="text-sm text-cream/55">Marmite de gambas au vermicelle</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Ho mok the lay <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">21,50 €</span></div><p class="text-sm text-cream/55">Fruits de mer au curry</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tha lay pad pong kaly</span><span class="text-gold whitespace-nowrap">21,50 €</span></div><p class="text-sm text-cream/55">Fruits de mer sautés au curry jaune</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kob katiem</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Cuisses de grenouille sautées poivre et ail</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kob pad ped <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Cuisses de grenouille sautées aux épices thaï</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="viandes">
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mb-1">Porc</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Mu wan</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Porc sauté caramélisé au miel</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kapao mua <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Porc sauté au basilic thaï + riz + œuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Mau paneng</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Porc au curry rouge et crème de coco</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Mu katiem pik thai</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Porc sauté au poivre et à l'ail</p></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Poulet</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kapao kai <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Émincé de poulet au basilic thaï + riz + œuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kai pad mamuang</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Émincé de poulet sauté aux noix de cajou</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kai pad king</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Émincé de poulet au gingembre</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kai katiam pik thai</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Poulet sauté au poivre et à l'ail</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kai priaw wan</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Poulet sauce aigre-douce</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kai paneng</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Poulet au curry rouge et crème de coco</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Keang kiewwan kai <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Poulet au curry vert et lait de coco</p></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Canard</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Ped ma karm</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Canard grillé à la sauce tamarin</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kapao ped <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Canard sauté aux feuilles de basilic thaï + riz + œuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Ped lingi <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Canard au curry rouge et lychees</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Ped kata</span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Canard à la crème de coco, servi sur plaque chauffante</p></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Bœuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Seu rong hai</span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Bœuf mariné grillé, servi sur plaque chauffante</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Massaman neau <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Bœuf au curry massaman et pommes de terre</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Neau lock lac</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Bœuf lock lac, riz parfumé et œuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Neau pad pak</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Bœuf sauté au wok avec des légumes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Keang kiewwan neau <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Bœuf au curry vert</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kapao neau <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Bœuf sauté au basilic thaï + riz + œuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Neau paneng</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Bœuf sauté au curry rouge et crème de coco</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="mer">
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kapao kung <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Crevettes sautées au basilic thaï + riz + œuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kung katiem prik thai</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Crevettes sautées poivre et ail</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kung priaw wan</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Crevettes sauce aigre-douce</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kung pad pak</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Crevettes sautées aux légumes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kung ma kam</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Crevettes à la sauce tamarin</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kapao plamung <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Calamars sautés au basilic thaï + riz + œuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plamung ka tiam prik thai</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Calamars sautés poivre et ail</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plamung priaw wan</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Calamars sauce aigre-douce</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="riz">
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad thaï <span class="text-cream/40 text-sm">(crevettes)</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Nouilles de riz sautées au wok, légumes et crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad thaï <span class="text-cream/40 text-sm">(poulet, bœuf ou légumes)</span></span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Nouilles de riz sautées façon thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad si iw <span class="text-cream/40 text-sm">(crevettes)</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Nouilles larges sautées façon thaï, crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad si iw <span class="text-cream/40 text-sm">(poulet, bœuf ou légumes)</span></span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Nouilles larges sautées façon thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad mii kung</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Nouilles jaunes sautées aux crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad mii neau</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Nouilles jaunes sautées au bœuf</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Guay teiw neau</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Soupe de nouilles « boat noodle », boulettes et viande</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Kuay num mau</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">Soupe de raviolis au porc façon thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Khao pad kung</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Riz thaï sauté aux crevettes</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Khao pad kai</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Riz thaï sauté au poulet</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Khao pad sap pa lod</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Riz sauté à l'ananas et crevettes, servi dans l'ananas</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="accompagnements">
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad pak</span><span class="text-gold whitespace-nowrap">6,50 €</span></div><p class="text-sm text-cream/55">Mélange de légumes sautés</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad mii</span><span class="text-gold whitespace-nowrap">6,50 €</span></div><p class="text-sm text-cream/55">Nouilles jaunes sautées</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Khao pad</span><span class="text-gold whitespace-nowrap">6,50 €</span></div><p class="text-sm text-cream/55">Riz cantonnais</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Khao pad thaï</span><span class="text-gold whitespace-nowrap">6,50 €</span></div><p class="text-sm text-cream/55">Riz sauté thaï</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Pad pak bung</span><span class="text-gold whitespace-nowrap">8,00 €</span></div><p class="text-sm text-cream/55">Liseron d'eau sauté à l'ail</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Khao hom mali</span><span class="text-gold whitespace-nowrap">2,50 €</span></div><p class="text-sm text-cream/55">Riz parfumé</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Khao niao</span><span class="text-gold whitespace-nowrap">3,00 €</span></div><p class="text-sm text-cream/55">Riz gluant</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="sushi">
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mb-1">Plateaux & menus</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau California</span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Saumon avocat, surimi avocat, saumon fumé avocat</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau Spring maki</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Spring saumon, thon, surimi</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Maki</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">Maki saumon, thon, concombre</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Maki végétarien</span><span class="text-gold whitespace-nowrap">11,50 €</span></div><p class="text-sm text-cream/55">Maki concombre, radis, avocat</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau Sashimi</span><span class="text-gold whitespace-nowrap">21,00 €</span></div><p class="text-sm text-cream/55">10 saumon, 5 thon, daurade et riz</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau Sushi</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">2 saumon, 2 thon, 2 daurade, 2 crevette</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Chirachi saumon <span class="text-cream/40 text-sm">(12 tr.)</span></span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">Bol de riz vinaigré et tranches de saumon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Chirachi mix <span class="text-cream/40 text-sm">(12 tr.)</span></span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Bol de riz vinaigré et poissons assortis — <span class="text-cream/70">supplément avocat 1,50 €</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Chirachi anguille <span class="text-cream/40 text-sm">(14 tr.)</span></span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Bol de riz vinaigré et anguille</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau Carpaccio saumon <span class="text-cream/40 text-sm">(15 tr.)</span></span><span class="text-gold whitespace-nowrap">15,00 €</span></div><p class="text-sm text-cream/55">Fines tranches de saumon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau Moshi Moshi</span><span class="text-gold whitespace-nowrap">23,00 €</span></div><p class="text-sm text-cream/55">California royale, maki, assortiment sushi et sashimi</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Toi & Moi <span class="text-cream/40 text-sm">(2 pers.)</span></span><span class="text-gold whitespace-nowrap">50,00 €</span></div><p class="text-sm text-cream/55">Grand assortiment maki, sushi et sashimi à partager</p></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Menus japonais <span class="text-cream/40 normal-case tracking-normal">avec salade & choux</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Dozo sushi maki</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Maki saumon, thon, 5 sushi assortiment</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Dozo sushi california</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">California saumon, surimi, 5 sushi assortiment</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Dozo sushi sashimi</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">5 sushi assortiment, assortiment sashimi</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Dozo makii sashimi</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">Maki saumon, thon, assortiment sashimi</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Dozo california sashimi</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">California saumon, surimi, assortiment sashimi</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau rouge</span><span class="text-gold whitespace-nowrap">13,50 €</span></div><p class="text-sm text-cream/55">4 sushi saumon, 4 sushi thon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Plateau orange</span><span class="text-gold whitespace-nowrap">14,50 €</span></div><p class="text-sm text-cream/55">8 sushi saumon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Mix saumon</span><span class="text-gold whitespace-nowrap">16,50 €</span></div><p class="text-sm text-cream/55">California saumon, maki saumon, 3 sushi et 3 sashimi saumon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Mix thon</span><span class="text-gold whitespace-nowrap">17,50 €</span></div><p class="text-sm text-cream/55">California thon, maki thon, 3 sushi et 3 sashimi thon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Oishi 1</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">6 california saumon avocat, 4 sushi saumon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Oishi 2</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">6 california saumon avocat, 2 sushi saumon, 4 sashimi saumon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Oishi 3</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">6 california saumon avocat, 6 maki saumon, 2 sushi saumon</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Menu Oishi 4</span><span class="text-gold whitespace-nowrap">12,50 €</span></div><p class="text-sm text-cream/55">6 california saumon avocat, 2 sushi saumon, 2 sushi crevette</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="sushicarte">
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mb-1">Maki <span class="text-cream/40 normal-case tracking-normal">(6 pièces)</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki saumon</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki saumon ciboulette</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki saumon avocat</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki thon</span><span class="text-gold whitespace-nowrap">4,70 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki thon ciboulette</span><span class="text-gold whitespace-nowrap">4,70 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki thon avocat</span><span class="text-gold whitespace-nowrap">4,70 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki crevette avocat</span><span class="text-gold whitespace-nowrap">4,70 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki concombre</span><span class="text-gold whitespace-nowrap">4,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki avocat</span><span class="text-gold whitespace-nowrap">4,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Maki radis mariné <span class="text-cream/40 text-sm">(oshinko)</span></span><span class="text-gold whitespace-nowrap">4,00 €</span></div></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Spring maki <span class="text-cream/40 normal-case tracking-normal">(6 pièces · supplément cheese 0,50 €)</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Spring maki saumon avocat</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Spring maki surimi avocat</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Spring maki thon avocat</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Spring maki crevette avocat</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Spring maki tempura crevette</span><span class="text-gold whitespace-nowrap">6,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Spring maki foie gras</span><span class="text-gold whitespace-nowrap">7,00 €</span></div></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">California <span class="text-cream/40 normal-case tracking-normal">(6 pièces)</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California saumon avocat</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California saumon cheese avocat</span><span class="text-gold whitespace-nowrap">5,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California saumon piquant <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">5,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California surimi avocat</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California surimi cheese avocat</span><span class="text-gold whitespace-nowrap">4,70 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California thon avocat</span><span class="text-gold whitespace-nowrap">5,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California thon cheese avocat</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California thon piquant <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">5,20 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California thon mi-cru</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California crevette avocat</span><span class="text-gold whitespace-nowrap">5,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California crevette cheese avocat</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California crevette piquant <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">5,20 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California anguille</span><span class="text-gold whitespace-nowrap">6,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California tempura crevette mayo</span><span class="text-gold whitespace-nowrap">6,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California spécial bœuf</span><span class="text-gold whitespace-nowrap">6,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California spicy seafood</span><span class="text-gold whitespace-nowrap">6,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California triple fish</span><span class="text-gold whitespace-nowrap">6,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">California saumon cheese avocat &amp; oignon frit</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Sushi <span class="text-cream/40 normal-case tracking-normal">(par paire)</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi saumon</span><span class="text-gold whitespace-nowrap">4,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi saumon ciboulette</span><span class="text-gold whitespace-nowrap">4,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi saumon avocat</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi thon</span><span class="text-gold whitespace-nowrap">4,30 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi thon ciboulette</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi thon avocat</span><span class="text-gold whitespace-nowrap">5,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi thon piquant <span class="text-chili text-xs">piquant</span></span><span class="text-gold whitespace-nowrap">4,80 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi dorade</span><span class="text-gold whitespace-nowrap">4,30 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi crevette</span><span class="text-gold whitespace-nowrap">4,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sushi anguille</span><span class="text-gold whitespace-nowrap">4,80 €</span></div></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Sashimi <span class="text-cream/40 normal-case tracking-normal">(10 tranches)</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sashimi saumon</span><span class="text-gold whitespace-nowrap">11,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sashimi thon</span><span class="text-gold whitespace-nowrap">11,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Sashimi dorade</span><span class="text-gold whitespace-nowrap">11,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Assortiment sashimi saumon + thon</span><span class="text-gold whitespace-nowrap">11,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Assortiment sashimi saumon + thon + dorade</span><span class="text-gold whitespace-nowrap">11,00 €</span></div></div>
+
+        <div class="sm:col-span-2"><p class="text-gold text-xs uppercase tracking-[0.25em] mt-4 mb-1">Futo maki <span class="text-cream/40 normal-case tracking-normal">(8 pièces)</span></p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Futo california</span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Saumon, thon, surimi, avocat, concombre, radis</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Futo spring</span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Saumon, thon, surimi, avocat, salade, menthe, concombre</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Futo arc-en-ciel</span><span class="text-gold whitespace-nowrap">15,50 €</span></div><p class="text-sm text-cream/55">Saumon, thon, dorade, surimi, avocat, salade, radis</p></div>
+      </div>
+
+      <div class="tab-panel hidden grid sm:grid-cols-2 gap-x-10 gap-y-5" data-panel="desserts">
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Riz coco à la mangue fraîche</span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Riz gluant au lait de coco et mangue</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Flan thaï au lait de coco</span><span class="text-gold whitespace-nowrap">7,50 €</span></div><p class="text-sm text-cream/55">Servi avec une boule de glace coco</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tapioca à la mangue</span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Perles de tapioca au lait glacé</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Banane au lait de coco</span><span class="text-gold whitespace-nowrap">5,50 €</span></div><p class="text-sm text-cream/55">Fondante, au lait de coco</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Nems au chocolat</span><span class="text-gold whitespace-nowrap">7,50 €</span></div><p class="text-sm text-cream/55">Croustillants et fondants</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Salade de fruits frais</span><span class="text-gold whitespace-nowrap">5,50 €</span></div><p class="text-sm text-cream/55">Fruits de saison</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Mangue fraîche</span><span class="text-gold whitespace-nowrap">8,50 €</span></div><p class="text-sm text-cream/55">Tranches de mangue fraîche</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Ananas frais</span><span class="text-gold whitespace-nowrap">4,00 €</span></div><p class="text-sm text-cream/55">Tranches d'ananas frais</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Lychees au sirop</span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Tiramisu façon Arôme Thaï</span><span class="text-gold whitespace-nowrap">5,50 €</span></div><p class="text-sm text-cream/55">La touche maison</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Boule de neige</span><span class="text-gold whitespace-nowrap">4,00 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Glace <span class="text-cream/40 text-sm">(3 boules)</span></span><span class="text-gold whitespace-nowrap">4,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Banane split</span><span class="text-gold whitespace-nowrap">7,50 €</span></div></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Banane grillée</span><span class="text-gold whitespace-nowrap">4,00 €</span></div><p class="text-sm text-cream/55">Servie tiède</p></div>
+        <div class="menu-row"><div class="flex justify-between gap-4"><span class="text-cream">Banane grillée flambée</span><span class="text-gold whitespace-nowrap">5,00 €</span></div><p class="text-sm text-cream/55">Servie tiède, flambée</p></div>
+      </div>
+    </div>
+
+    <p class="reveal text-center text-cream/60 text-xs mt-6">Les prix et plats sont donnés à titre indicatif et peuvent évoluer. Certains plats sont épicés <span class="text-chili">(piquant)</span> — n'hésitez pas à nous le préciser.</p>
+  </div>
+</section>
+
+<!-- ============ CARTE EN PHOTOS ============ -->
+<section id="carte-photos" aria-labelledby="carte-photos-title" class="py-16 sm:py-20 bg-charcoal border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="reveal text-gold text-xs uppercase tracking-[0.3em] mb-4">La carte imprimée</p>
+      <h2 id="carte-photos-title" class="reveal font-serif text-3xl sm:text-4xl text-cream mb-5" data-delay="1">Feuilleter la carte en photos</h2>
+      <p class="reveal text-cream/70 leading-relaxed" data-delay="2">Retrouvez l'intégralité de la carte telle qu'au restaurant. Cliquez sur une page pour l'agrandir.</p>
+    </div>
+
+    <div class="reveal relative max-w-2xl mx-auto">
+      <!-- Piste du carrousel -->
+      <div class="overflow-hidden rounded-2xl border border-white/10 bg-ink">
+        <div id="carteTrack" class="flex transition-transform duration-500 ease-out">
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/01-entrees-vapeur.jpg" data-alt="Carte — Entrées et vapeur"><img src="img/carte/01-entrees-vapeur.jpg" alt="Carte — Entrées et vapeur" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/1788949000191.jpg" data-alt="Carte — Soupes et salades"><img src="img/carte/1788949000191.jpg" alt="Carte — Soupes et salades" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/1788949000132.jpg" data-alt="Carte — Spécialités du chef"><img src="img/carte/1788949000132.jpg" alt="Carte — Spécialités du chef" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/1788949000152.jpg" data-alt="Carte — Volailles"><img src="img/carte/1788949000152.jpg" alt="Carte — Volailles" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/1788949000076.jpg" data-alt="Carte — Viandes et fruits de mer"><img src="img/carte/1788949000076.jpg" alt="Carte — Viandes et fruits de mer" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/1788949000111.jpg" data-alt="Carte — Pâtes, riz et accompagnements"><img src="img/carte/1788949000111.jpg" alt="Carte — Pâtes, riz et accompagnements" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/1788949000175.jpg" data-alt="Carte — Menu recommandé (street food)"><img src="img/carte/1788949000175.jpg" alt="Carte — Menu recommandé (street food)" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/07-menu-sushi.jpg" data-alt="Carte — Menus sushi"><img src="img/carte/07-menu-sushi.jpg" alt="Carte — Menus sushi" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/08-suite-sushi.jpg" data-alt="Carte — Sushi à la carte (maki, spring, california)"><img src="img/carte/08-suite-sushi.jpg" alt="Carte — Sushi à la carte (maki, spring, california)" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/10-entrees-sushi.jpg" data-alt="Carte — Entrées japonaises, sushi et sashimi"><img src="img/carte/10-entrees-sushi.jpg" alt="Carte — Entrées japonaises, sushi et sashimi" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+          <button class="carte-slide lb-item shrink-0 w-full" data-gallery="carte" data-full="img/carte/11-desserts.jpg" data-alt="Carte — Desserts"><img src="img/carte/11-desserts.jpg" alt="Carte — Desserts" class="w-full max-h-[72vh] object-contain mx-auto" loading="lazy" /></button>
+        </div>
+      </div>
+
+      <!-- Flèches -->
+      <button id="cartePrev" class="absolute top-1/2 -translate-y-1/2 -left-3 sm:-left-6 grid place-items-center w-11 h-11 rounded-full bg-ink/80 backdrop-blur border border-white/20 text-cream hover:bg-gold hover:text-ink hover:border-gold transition-colors" aria-label="Page précédente">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button id="carteNext" class="absolute top-1/2 -translate-y-1/2 -right-3 sm:-right-6 grid place-items-center w-11 h-11 rounded-full bg-ink/80 backdrop-blur border border-white/20 text-cream hover:bg-gold hover:text-ink hover:border-gold transition-colors" aria-label="Page suivante">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <!-- Compteur + pastilles -->
+    <div class="reveal flex flex-col items-center gap-4 mt-7">
+      <div id="carteDots" class="flex flex-wrap justify-center gap-2"></div>
+      <span id="carteCounter" class="text-cream/50 text-sm tracking-wide">1 / 11</span>
+    </div>
+
+    <div class="reveal text-center mt-12 flex flex-wrap justify-center gap-3">
+      <a href="tel:+33561510896" class="inline-flex items-center gap-2 rounded-full bg-gold text-ink px-7 py-3.5 font-medium hover:bg-goldsoft transition-colors">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Commander / Réserver
+      </a>
+      <a href="index.html#pratique" class="inline-flex items-center gap-2 rounded-full border border-cream/30 text-cream px-7 py-3.5 font-medium hover:border-gold hover:text-gold transition-colors">
+        Infos & accès
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink border-t border-white/10 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="font-serif text-xl text-cream">Arôme Thaï</span>
+        </div>
+        <p class="text-cream/55 text-sm leading-relaxed max-w-xs">Cuisine thaïlandaise authentique, sushis frais et cocktails, au cœur de Muret.</p>
+      </div>
+
+      <div>
+        <p class="text-cream font-medium mb-4">Navigation</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="index.html" class="hover:text-gold transition-colors">Accueil</a></li>
+          <li><a href="menu.html" class="hover:text-gold transition-colors">La carte</a></li>
+          <li><a href="index.html#pratique" class="hover:text-gold transition-colors">Infos & accès</a></li>
+          <li><a href="avis.html" class="hover:text-gold transition-colors">Avis</a></li>
+          <li><a href="index.html#photos" class="hover:text-gold transition-colors">Photos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-cream font-medium mb-4">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>2 Rue de Vasconia, 31600 Muret</li>
+          <li><a href="tel:+33561510896" class="hover:text-gold transition-colors">05 61 51 08 96</a></li>
+          <li class="pt-2 flex gap-3">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=2+Rue+de+Vasconia+31600+Muret" target="_blank" rel="noopener" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-cream/70 hover:border-gold hover:text-gold transition-colors" aria-label="Itinéraire Google Maps">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </a>
+            <a href="tel:+33561510896" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-cream/70 hover:border-gold hover:text-gold transition-colors" aria-label="Appeler le restaurant">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/40">
+      <p>© <span id="year"></span> Arôme Thaï — Tous droits réservés.</p>
+      <p>Site créé par <a href="https://designbytibo.fr" target="_blank" rel="noopener" class="text-cream/60 hover:text-gold transition-colors">Design by Tibo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" class="hidden-lb fixed inset-0 z-[100] bg-ink/95 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Visionneuse d'images">
+  <button id="lbClose" class="absolute top-5 right-5 grid place-items-center w-11 h-11 rounded-full border border-white/20 text-cream hover:bg-white/10 transition-colors" aria-label="Fermer">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <button id="lbPrev" class="absolute left-3 sm:left-6 grid place-items-center w-12 h-12 rounded-full border border-white/20 text-cream hover:bg-white/10 transition-colors" aria-label="Image précédente">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <img id="lbImg" src="" alt="" class="max-w-[92vw] max-h-[85vh] object-contain rounded-lg shadow-2xl" />
+  <button id="lbNext" class="absolute right-3 sm:right-6 grid place-items-center w-12 h-12 rounded-full border border-white/20 text-cream hover:bg-white/10 transition-colors" aria-label="Image suivante">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <p id="lbCaption" class="absolute bottom-5 left-1/2 -translate-x-1/2 text-cream/70 text-sm text-center px-4"></p>
+</div>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+(function () {
+  // Année dynamique
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Reveal au scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced || !('IntersectionObserver' in window)) {
+    reveals.forEach(el => el.classList.add('is-visible'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  }
+
+  // Nav : fond au scroll
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 40) nav.classList.add('bg-ink/90','backdrop-blur','border-white/10','shadow-lg','shadow-black/20');
+    else nav.classList.remove('bg-ink/90','backdrop-blur','border-white/10','shadow-lg','shadow-black/20');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Burger mobile
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('hidden');
+    burger.setAttribute('aria-expanded', String(!open));
+  });
+  document.querySelectorAll('[data-moblink]').forEach(a =>
+    a.addEventListener('click', () => { mobileMenu.classList.add('hidden'); burger.setAttribute('aria-expanded','false'); })
+  );
+
+  // Onglets carte + photo de fond par catégorie
+  const tabs = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+  const tabBg = document.getElementById('tabBg');
+  const tabImages = {
+    entrees:         'img/gyoza.webp',
+    soupes:          'img/Tom kha kai.jpg',
+    chef:            'img/spread-4.jpg',
+    viandes:         'img/Kai pad mamuang.jpg',
+    mer:             'img/curry jaune.png',
+    riz:             'img/pad-thai-boeuf.jpg',
+    accompagnements: 'img/bol de riz accompagnement.jpg',
+    sushi:           'img/sushi.jpg',
+    sushicarte:      'img/sushi.jpg',
+    desserts:        'img/mango rice.jpg'
+  };
+  function setTabBg(name) {
+    if (!tabBg) return;
+    const src = tabImages[name];
+    if (!src) { tabBg.style.opacity = '0'; return; }
+    tabBg.style.backgroundImage = `url('${src}')`;
+    tabBg.style.opacity = '1';
+  }
+  setTabBg('entrees');
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const target = tab.dataset.tab;
+    panels.forEach(p => p.classList.toggle('hidden', p.dataset.panel !== target));
+    setTabBg(target);
+  }));
+
+  // Carrousel de la carte imprimée
+  const track = document.getElementById('carteTrack');
+  if (track) {
+    const total = track.children.length;
+    const counter = document.getElementById('carteCounter');
+    const dotsWrap = document.getElementById('carteDots');
+    let cIndex = 0;
+    if (dotsWrap) {
+      for (let i = 0; i < total; i++) {
+        const d = document.createElement('button');
+        d.className = 'carte-dot w-2.5 h-2.5 rounded-full border border-white/25 transition-colors';
+        d.setAttribute('aria-label', `Page ${i + 1}`);
+        d.addEventListener('click', () => { cIndex = i; updateCarte(); });
+        dotsWrap.appendChild(d);
+      }
+    }
+    const dots = dotsWrap ? Array.from(dotsWrap.children) : [];
+    function updateCarte() {
+      track.style.transform = `translateX(-${cIndex * 100}%)`;
+      if (counter) counter.textContent = `${cIndex + 1} / ${total}`;
+      dots.forEach((d, i) => {
+        d.classList.toggle('bg-gold', i === cIndex);
+        d.classList.toggle('border-gold', i === cIndex);
+      });
+    }
+    document.getElementById('cartePrev').addEventListener('click', () => { cIndex = (cIndex - 1 + total) % total; updateCarte(); });
+    document.getElementById('carteNext').addEventListener('click', () => { cIndex = (cIndex + 1) % total; updateCarte(); });
+    updateCarte();
+  }
+
+  // Lightbox
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCaption = document.getElementById('lbCaption');
+  let group = [], index = 0;
+
+  function collect(name) {
+    return Array.from(document.querySelectorAll(`.lb-item[data-gallery="${name}"]`))
+      .map(el => ({ src: el.dataset.full, alt: el.dataset.alt || '' }));
+  }
+  function show(i) {
+    if (!group.length) return;
+    index = (i + group.length) % group.length;
+    lbImg.src = group[index].src;
+    lbImg.alt = group[index].alt;
+    lbCaption.textContent = group[index].alt;
+  }
+  function open(name, i) {
+    group = collect(name);
+    show(i);
+    lb.classList.remove('hidden-lb');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.add('hidden-lb');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+
+  document.querySelectorAll('.lb-item[data-gallery="carte"]').forEach((el, i) =>
+    el.addEventListener('click', () => open('carte', i))
+  );
+
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', () => show(index - 1));
+  document.getElementById('lbNext').addEventListener('click', () => show(index + 1));
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (lb.classList.contains('hidden-lb')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+  });
+})();
+</script>
+</body>
+</html>
